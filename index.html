@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Dela Cruz | Personal Portfolio</title>
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><i class="bi bi-stars"></i> Kim<span>.jmb</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mission">Mission &amp; Vision</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-nav-cta ms-lg-2" href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HOMEPAGE ================= -->
+  <section id="home" class="hero-section">
+    <div class="blob blob-one"></div>
+    <div class="blob blob-two"></div>
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <span class="badge rounded-pill hero-badge mb-3"><i class="bi bi-emoji-sunglasses"></i> BSIT · Web Technologies</span>
+          <h1 class="hero-title">Hey, I'm <span class="text-gradient">Kim</span>.<br>I build things for the web.</h1>
+          <p class="hero-text">
+            Second-year IT student who loves clean layouts, purple color palettes, and turning
+            ideas into working websites. Welcome to my little corner of the internet.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#about" class="btn btn-primary-glow btn-lg rounded-pill">Get to know me</a>
+            <a href="#contact" class="btn btn-outline-glow btn-lg rounded-pill">Say hello</a>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <span class="badge rounded-pill chip"><i class="bi bi-code-slash"></i> HTML5</span>
+            <span class="badge rounded-pill chip"><i class="bi bi-palette"></i> CSS3</span>
+            <span class="badge rounded-pill chip"><i class="bi bi-bootstrap-fill"></i> Bootstrap 5</span>
+            <span class="badge rounded-pill chip"><i class="bi bi-filetype-java"></i> Java</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-photo-wrap mx-auto">
+            <img src="kimPogi.jpg" alt="Portrait of Juan Dela Cruz" class="hero-photo">
+            <div class="floaty-card floaty-top">
+              <i class="bi bi-mortarboard-fill"></i>
+              <div>
+                <strong>BSIT Student</strong>
+                <span>University of Cabuyao</span>
+              </div>
+            </div>
+            <div class="floaty-card floaty-bottom">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <strong>Cabuyao, Laguna</strong>
+                <span>Philippines</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ME ================= -->
+  <section id="about" class="section-block">
+    <div class="container">
+      <div class="section-heading">
+        <h2>About Me</h2>
+        <p>A quick rundown of who I am, what I've studied, and what I'm good at.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Info card -->
+        <div class="col-lg-5">
+          <div class="card info-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Basic Info</h5>
+              <ul class="list-group list-group-flush info-list">
+                <li class="list-group-item"><i class="bi bi-person-fill"></i> <strong>Name:</strong> Kim Justine M. Banania</li>
+                <li class="list-group-item"><i class="bi bi-cake2-fill"></i> <strong>Age:</strong> 19 years old</li>
+                <li class="list-group-item"><i class="bi bi-mortarboard-fill"></i> <strong>Course:</strong> BS Information Technology</li>
+                <li class="list-group-item"><i class="bi bi-building"></i> <strong>School:</strong> University of Cabuyao (PnC)</li>
+                <li class="list-group-item"><i class="bi bi-heart-fill"></i> <strong>Interests:</strong> Web design, Java, Manhwa, and Light Novel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills + accordion -->
+        <div class="col-lg-7">
+          <div class="card info-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Skills</h5>
+
+              <div class="skill-row">
+                <div class="skill-label"><span>HTML &amp; CSS</span><span>45%</span></div>
+                <div class="progress skill-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-label"><span>Bootstrap</span><span>40%</span></div>
+                <div class="progress skill-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-label"><span>JavaScript</span><span>0%</span></div>
+                <div class="progress skill-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-label"><span>Java</span><span>50%</span></div>
+                <div class="progress skill-progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <h6 class="mt-4 mb-2">Frequently asked about me</h6>
+              <div class="accordion" id="aboutAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                      What am I currently learning?
+                    </button>
+                  </h2>
+                  <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                    <div class="accordion-body">
+                      Right now, I'm focused on strengthening my Java programming skills and applying what I learn through hands-on projects.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                      What do I want to do after college?
+                    </button>
+                  </h2>
+                  <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                    <div class="accordion-body">
+                      My goal is to become a Full-Stack Developer and build the skills needed to create complete, functional, and responsive web applications.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                      What do I do outside of school?
+                    </button>
+                  </h2>
+                  <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                    <div class="accordion-body">
+                      When I'm not coding, I'm usually reading, gaming, or
+                      just sleeping and relaxing on my house.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="section-block section-alt">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Gallery</h2>
+        <p>A few snapshots — tap any photo to view it up close.</p>
+      </div>
+
+      <!-- Carousel -->
+      <div id="galleryCarousel" class="carousel slide gallery-carousel mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="schoolLife.jpg" class="d-block w-100" alt="Juan on campus">
+            <div class="carousel-caption">
+              <h5>Campus Life</h5>
+              <p>Another day at the University of Cabuyao.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="nightCode.jpg" class="d-block w-100" alt="Juan coding">
+            <div class="carousel-caption">
+              <h5>Late-night Coding</h5>
+              <p>Working on this very project!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="running.jpg" class="d-block w-100" alt="Juan with friends">
+            <div class="carousel-caption">
+              <h5>Morning Run</h5>
+              <p>Maintaining my health.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Gallery grid: 6 images + modal -->
+      <div class="row g-4">
+
+        <div class="col-6 col-md-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal1">
+            <img src="una.jpg" alt="Photo 1">
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal2">
+            <img src="pangalawa.jpg" alt="Photo 2">
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal3">
+            <img src="pangapat.jpg" alt="Photo 3">
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal4">
+            <img src="kimPogi.jpg" alt="Photo 4">
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal5">
+            <img src="panglima.jpg" alt="Photo 5">
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imgModal6">
+            <img src="pangatlo.jpg" alt="Photo 6">
+            <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for gallery images -->
+  <div class="modal fade" id="imgModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content img-modal">
+        <div class="modal-header"><h5 class="modal-title">Campus Life</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <img src="una.jpg" class="w-100" alt="Photo 1 large">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imgModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content img-modal">
+        <div class="modal-header"><h5 class="modal-title">Coding Night</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <img src="pangalawa.jpg" class="w-100" alt="Photo 2 large">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imgModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content img-modal">
+        <div class="modal-header"><h5 class="modal-title">Squad Coffee</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <img src="pangapat.jpg" class="w-100" alt="Photo 3 large">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imgModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content img-modal">
+        <div class="modal-header"><h5 class="modal-title">Weekend Vibes</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <img src="kimPogi.jpg" class="w-100" alt="Photo 4 large">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imgModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content img-modal">
+        <div class="modal-header"><h5 class="modal-title">Org Event</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <img src="panglima.jpg" class="w-100" alt="Photo 5 large">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imgModal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content img-modal">
+        <div class="modal-header"><h5 class="modal-title">Graduation Goals</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <img src="pangatlo.jpg" class="w-100" alt="Photo 6 large">
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MISSION & VISION ================= -->
+  <section id="mission" class="section-block">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Mission &amp; Vision</h2>
+        <p>What the University of Cabuyao (PnC) stands for.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="mv-card h-100">
+            <i class="bi bi-eye-fill mv-icon"></i>
+            <h5>Vision</h5>
+            <p>
+              A premier institution of higher learning in Region IV, developing globally-competitive and value-laden professionals and leaders instrumental to community development and nation-building
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mv-card h-100">
+            <i class="bi bi-flag-fill mv-icon"></i>
+            <h5>Mission</h5>
+            <p>
+              As an institution of higher learning, University of Cabuyao is committed to equip individuals with knowledge, skills and values that will enable them to achieve their professional goals and provide leadership and service for national development.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-md-4">
+          <div class="value-pill"><i class="bi bi-person-heart"></i> Personal Dignity</div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-pill"><i class="bi bi-people-fill"></i> Nurturing Community</div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-pill"><i class="bi bi-award-fill"></i> Commitment to Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section-block section-alt">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Contact Me</h2>
+        <p>Got a project, a question, or just want to say hi? Send it over.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-5">
+          <div class="alert alert-contact d-flex align-items-start gap-2" role="alert">
+            <i class="bi bi-info-circle-fill fs-5"></i>
+            <div>I usually reply within 24 hours. Thanks for reaching out!</div>
+          </div>
+
+          <ul class="list-group list-group-flush contact-list">
+            <li class="list-group-item"><i class="bi bi-envelope-fill"></i> kimbanania789@gmail.com</li>
+            <li class="list-group-item"><i class="bi bi-telephone-fill"></i> +63 970 9058 702</li>
+            <li class="list-group-item"><i class="bi bi-geo-alt-fill"></i> Cabuyao, Laguna, Philippines</li>
+          </ul>
+
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form class="contact-form">
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="form-label">Your Name</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-person"></i></span>
+                  <input type="text" class="form-control" placeholder="Kim Justine Banania" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email Address</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                  <input type="email" class="form-control" placeholder="kim@example.com" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Subject</label>
+                <select class="form-select">
+                  <option selected>Project Inquiry</option>
+                  <option>Collaboration</option>
+                  <option>Just Saying Hi</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Tell me about it..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-glow btn-lg rounded-pill w-100">
+                  <i class="bi bi-send-fill"></i> Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="mb-1">Made with <i class="bi bi-heart-fill"></i> and Bootstrap by Kim Justine Banania</p>
+      <small>CCS114 — Web Technologies · Midterm Laboratory Examination</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
